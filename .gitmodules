@@ -1,0 +1,15 @@
+[submodule "reflection-form-builder"]
+	path = reflection-form-builder
+	url = https://github.com/document-scanner/reflection-form-builder
+[submodule "reflection-form-builder-it"]
+	path = reflection-form-builder-it
+	url = https://github.com/document-scanner/reflection-form-builder-it
+[submodule "reflection-form-builder-demo"]
+	path = reflection-form-builder-demo
+	url = https://github.com/document-scanner/reflection-form-builder-demo
+[submodule "reflection-form-builder-test-entities"]
+	path = reflection-form-builder-test-entities
+	url = https://github.com/document-scanner/reflection-form-builder-test-entities
+[submodule "reflection-form-builder-jpa"]
+	path = reflection-form-builder-jpa
+	url = https://github.com/document-scanner/reflection-form-builder-jpa
