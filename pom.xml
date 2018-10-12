@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>richtercloud</groupId>
+        <groupId>de.richtercloud</groupId>
         <artifactId>maven-parent</artifactId>
-        <version>1</version>
+        <version>8</version>
         <relativePath></relativePath>
     </parent>
     <artifactId>reflection-form-builder-parent</artifactId>
@@ -22,55 +22,6 @@
         <module>reflection-form-builder-demo</module>
         <module>reflection-form-builder-it</module>
     </modules>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>2.17</version>
-                <executions>
-                    <execution>
-                        <id>check_style</id>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                        <phase>validate</phase>
-                    </execution>
-                </executions>
-                <configuration>
-                    <configLocation>check_style.xml</configLocation>
-                    <includeTestSourceDirectory>true</includeTestSourceDirectory>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-pmd-plugin</artifactId>
-                <version>3.8</version>
-                <executions>
-                    <execution>
-                        <id>pmd-check</id>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <printFailingErrors>true</printFailingErrors>
-                    <rulesets>
-                        <ruleset>/ruleset.xml</ruleset>
-                    </rulesets>
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>richtercloud</groupId>
-                        <artifactId>code-analysis</artifactId>
-                        <version>1.0-SNAPSHOT</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-        </plugins>
-    </build>
     <profiles>
         <profile>
             <id>travis</id>

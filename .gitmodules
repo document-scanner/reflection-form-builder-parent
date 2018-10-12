@@ -13,3 +13,9 @@
 [submodule "reflection-form-builder-jpa"]
 	path = reflection-form-builder-jpa
 	url = https://github.com/document-scanner/reflection-form-builder-jpa
+[submodule "checkstyle-config"]
+	path = checkstyle-config
+	url = https://gitlab.com/krichter/checkstyle-config.git
+[submodule "code-analysis"]
+	path = code-analysis
+	url = https://github.com/krichter722/code-analysis.git
